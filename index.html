@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MUET Retrieval Engine | Data Structures & Algorithms</title>
+  <meta name="description" content="A high-performance educational retrieval engine for a university RAG assistant. Built with custom Hash Table inverted index, linear scan baseline, multi-strategy ranking, and verifiable evidence passages.">
+  <meta name="author" content="Armeen Ali Soomro (MUET CSE '29)">
+  <meta name="keywords" content="MUET, Retrieval Engine, Data Structures and Algorithms, Hash Table, Inverted Index, Search Engine, Information Retrieval, Jamshoro, CS-251">
+  <meta property="og:title" content="MUET Document Retrieval Engine">
+  <meta property="og:description" content="Educational retrieval engine with custom hash table inverted index, linear search comparison, ranking lab, and PDF evidence viewer.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+
+  <header>
+    <div class="glass nav-container">
+      <a href="#home" class="brand" data-r="home">
+        <span>MUET Retrieval</span>
+        <span class="brand-badge">CS-251 PBL</span>
+      </a>
+
+      <nav id="nav" aria-label="Main Navigation"></nav>
+
+      <div class="header-actions">
+        <button id="backend_pill" class="status-pill" type="button" aria-label="Engine Status and Backend Settings">
+          <span id="backend_dot" class="status-dot"></span>
+          <span id="backend_status_text">Checking Engine…</span>
+        </button>
+        <button id="theme_btn" class="theme-toggle" type="button" aria-label="Toggle Dark/Light Mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="view" role="main">
+    <p class="sub">Initializing MUET Retrieval Engine…</p>
+  </main>
+
+  <div id="toasts" aria-live="polite"></div>
+
+  <!-- Core Scripts in Dependency Order -->
+  <script src="js/data.js"></script>
+  <script src="js/dsa-engine.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/pdf-writer.js"></script>
+  <script src="js/api-client.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
